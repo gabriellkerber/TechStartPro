@@ -1,0 +1,33 @@
+<div class="all">
+
+
+
+    <h1 style="padding-top: 10vh; color: white;">Add Categories!</h1>
+    <h3 style="color:rgb(83, 10, 10); font-weight: bold;">CSV FILE ONLY</h3>
+
+    <div class="categories">
+        
+      <input type="file" #fileImportInput name="File Upload" id="csvFileUpload" (change)="fileChangeListener($event)"
+        accept=".csv" />
+    </div>
+  
+    <div class="csv-result-table">
+  
+      <table style="margin: 15px auto;">
+        <thead>
+          <tr>
+            <th>Categories Added</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let csvData of csvRecords;let i = index;">
+            <td>
+              <span style="color: white">{{csvData}}</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  
+    </div>
+</div>
+

@@ -1,0 +1,27 @@
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStartPro</title>
+</head>
+<body>
+
+  <div class="content">
+    <div class="Top">
+      <h1 style="text-align: center; font-weight: bold;">TechStartPro</h1>
+    </div>
+  
+    <div class="buttons" fxLayout="column" fxLayoutAlign="space-around center" style="text-align: center;">
+      <button mat-raised-button color="primary" routerLink="/AddCategories"  style="margin-top: 2vh;">Add Categories</button>
+      <button mat-raised-button color="primary" routerLink="/AddProducts"  style="margin-top: 2vh;">Add Products</button>
+      <button mat-raised-button color="primary" routerLink="/SearchProducts"  style="margin-top: 2vh;">Search Products</button>
+    </div>
+  
+    <div>
+      <footer></footer>
+    </div>
+  </div>
+
+  <router-outlet class="router"></router-outlet>
+</body>
+</html>
